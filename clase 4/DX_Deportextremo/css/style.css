@@ -9,24 +9,27 @@ a {
 	color: #D9D9D9;
 	text-decoration: none;
 }
+
 a:hover {
 	color: #FFFFFF;
-
 }
 
-header {
+#top {
 	background-color:#333333; 
 	padding:10px;
+	/*Flexbox*/
+	display:flex;
+	flex-flow: row;
+	align-items: center; /*flex-start | center | flex-end */
+	justify-content: flex-start; /*flex-start | center | flex-end | space-between | space-around */
 }
 
-h1{
+#top h1{
 	font-size:32px;
 	margin:0;
 }
 
-#Menu {
-	background-color: lightgreen; 
-}
+#Menu {margin-left: auto}
  
 #Menu ul {
 	margin: 0;
@@ -35,8 +38,43 @@ h1{
 	overflow: hidden;
 }
 
-#Menu li {
-	background-color: violet;
-	width: 100px;
-	float: left;
+#Menu li {float: left}
+
+#Menu ul li a {
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+
+#Menu ul li a:hover {
+	color: 333333;
+	background-color: #D9D9D9;
+}
+
+#Menu ul li:nth-of-type(2) a {
+	/*background-color: grey;*/
+}
+
+#content figure {margin:0}
+
+#content figcaption {
+	background-color: #333333;
+	padding: 15px;
+}
+
+#content h2 {
+	margin:0;
+	font-size:36px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#content img {
+	display: block;
+	width: 100%;
+}
+
+.noticia {
+	padding: 10px; 	
+	border-bottom: solid 1px #CCCCCC;
 }
