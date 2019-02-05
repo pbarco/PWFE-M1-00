@@ -75,6 +75,52 @@ a:hover {
 }
 
 .noticia {
-	padding: 10px; 	
+	padding: 0px; 	
 	border-bottom: solid 1px #CCCCCC;
+	display:flex;
+	flex-flow: row;
+	align-items: center; 
+	justify-content:flex-start;
 }
+
+.noticia-img {
+	padding: 20px;
+	display: block;
+	width: 40%;
+}
+
+.noticia-txt {display: block;
+	padding: 25px;
+	margin-bottom:15px;
+	text-align: flex-start;
+	}
+
+.noticia-txt h3 {
+	font-size: 32px;
+	margin-bottom:0px;
+}
+
+.noticia-txt p {
+	margin-top:5px;
+	line-height: 30px;
+}
+
+.noticia-img2 {
+	padding: 20px;
+	display: block;
+	width: 54%;
+}
+
+.noticia-img3 {
+	padding: 20px;
+	display: block;
+	width: 38%;
+}
+
+.noticia-img4 {
+	padding: 20px;
+	display: block;
+	width: 66%;
+}
+
+
