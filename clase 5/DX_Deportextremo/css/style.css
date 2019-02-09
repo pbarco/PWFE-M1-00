@@ -13,9 +13,11 @@ a {
 a:hover {
 	color: #FFFFFF;
 }
+#top, #content figcaption, #copyright {
+	background-color: #333333;
+}
 
 #top {
-	background-color:#333333; 
 	padding:10px;
 	/*Flexbox*/
 	display:flex;
@@ -58,7 +60,6 @@ a:hover {
 #content figure {margin:0}
 
 #content figcaption {
-	background-color: #333333;
 	padding: 15px;
 }
 
@@ -103,3 +104,38 @@ a:hover {
 	font-size: 24px;
 }
 
+#tabla-posiciones table {
+	border: solid 1px #CCCCCC;
+	border-collapse: collapse; /*el borde donde termina una celda y el borde donde empieza la siguiente 
+	ocupada el mismo espacio */
+	margin: auto;
+	width: 600px;
+}
+
+#tabla-posiciones tr {
+	 border-bottom: solid 1px #cccccc;
+	}
+
+#tabla-posiciones td, #tabla-posiciones th {
+	padding: 10px;
+	}	
+
+#tabla-posiciones td:nth-of-type(odd) {
+	font-weigth: bold;
+	font-size: 32px;
+	/*El argumento :nth-of-type() hace que se modifique valores especificos, en este caso solo los 
+	valores impares de la tabla */
+	text-align: center;
+}
+
+#tabla-posiciones strong {
+	color: green;
+}
+
+#copyright p {
+	color: #ffffff;
+	margin:0;
+	padding: 15px;
+	text-align: center;
+	font-size: 14px;
+}
