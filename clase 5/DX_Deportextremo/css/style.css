@@ -75,68 +75,31 @@ a:hover {
 }
 
 .noticia {
-	padding: 0px; 	
+	padding: 10px; 	
 	border-bottom: solid 1px #CCCCCC;
-	display:flex;
-	flex-flow: row;
-	align-items: center; 
-	justify-content:flex-start;
+	overflow:hidden;
+	margin: 0px 10px; /*como las agujas del reloj, arriba, a la derecha, abajo y a la izquierda; reconoce que
+	el primer valor corresponde arriba y abajo, y el segundo derecha e izquierda */
 }
+
+.noticia-img, .noticia-txt {
+	float:left;
+	padding:10px;
+	box-sizing: border-box; /*en caso de que compartan atributos se pueden poner los dos
+	de esta forma */
+}
+
 
 .noticia-img {
-	padding: 20px;
-	display: block;
-	width: 40%;
+	width: 30%;	
 }
 
-.noticia-txt {display: block;
-	padding: 25px;
-	margin-bottom:15px;
-	text-align: flex-start;
-	}
+.noticia-txt {
+	width: 70%;
+}
 
 .noticia-txt h3 {
-	font-size: 32px;
-	margin-bottom:0px;
+	margin:10px 0;
+	font-size: 24px;
 }
-
-.noticia-txt p {
-	margin-top:5px;
-	line-height: 30px;
-}
-
-.noticia-img2 {
-	padding: 20px;
-	display: block;
-	width: 54%;
-}
-
-.noticia-img3 {
-	padding: 20px;
-	display: block;
-	width: 38%;
-}
-
-.noticia-img4 {
-	padding: 20px;
-	display: block;
-	width: 66%;
-}
-
-#tabla-posiciones {
-	border-bottom: solid 1px #CCCCCC;
-}
-
-#tabla-posiciones h4 {
-	background-color: red;
-	color: white;
-	font-size: 25px;
-	display: block;
-	padding: 15px;
-	text-align: center;
-	font-family: arial;
-	margin-left: 200px;
-	margin-right: 200px;
-}
-
 
